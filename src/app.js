@@ -8,7 +8,10 @@ const app = express();
 const router = express.Router();
 
 //Conecta ao banco
-mongoose.connect('mongodb+srv://rafael:<password>@cluster0.wpnekdw.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://rafael:mongol92@cluster0.wpnekdw.mongodb.net/?retryWrites=true&w=majority');
+
+//Carrega os Models
+const Product = require('./models/product');
 
 // Carrega as Rotas
 const indexRoute = require("./routes/index-route");
